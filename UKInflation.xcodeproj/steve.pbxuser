@@ -10,6 +10,9 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = AAB909741382E36000597C6E /* UKInflation */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* UKInflation */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* UKInflation */,
+		);
 		codeSenseManager = AAB9097E1382E36900597C6E /* Code sense */;
 		executables = (
 			AAB909741382E36000597C6E /* UKInflation */,
@@ -20,9 +23,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					759,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -37,8 +40,8 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 327344992;
-			PBXWorkspaceStateSaveDate = 327344992;
+			PBXPerProjectTemplateStateSaveDate = 327350328;
+			PBXWorkspaceStateSaveDate = 327350328;
 		};
 		sourceControlManager = AAB9097D1382E36900597C6E /* Source Control */;
 		userBuildSettings = {
