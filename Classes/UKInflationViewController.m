@@ -10,40 +10,13 @@
 
 @implementation UKInflationViewController
 
+@synthesize receivedData;
 
-
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self fetchRpi];
 }
-*/
 
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -60,6 +33,41 @@
 
 - (void)dealloc {
     [super dealloc];
+}
+
+
+#pragma mark -
+#pragma mark web service interaction
+
+- (void)fetchRpi {
+	receivedData = [[NSMutableData alloc] init];
+	
+	NSURL *url = [NSURL URLWithString:@"http://ukinflation.appspot.com/rpi.json"];
+	NSURLRequest *request = [NSURLRequest requestWithURL:url];
+	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	
+	[connection release];
+}
+
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    [receivedData setLength:0];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    [receivedData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    // handle error
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    // receivedData contains the complete result
+	NSString *data = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+	NSLog(@"%@", data);
+	[receivedData release];
+	[data release];
 }
 
 @end
