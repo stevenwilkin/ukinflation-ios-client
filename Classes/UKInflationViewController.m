@@ -42,7 +42,24 @@
 }
 
 
-#pragma mark -
+#pragma mark data persistance
+
+// path to the the plist containing the persisted data
+- (NSString *)plistPath {
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *docsDir = [paths objectAtIndex:0];
+	return [docsDir stringByAppendingPathComponent:@"data.plist"];
+}
+
+// write the data to the plist
+- (void)writeData:(NSString *)rpi {
+	NSDictionary *dict = [[NSDictionary alloc]
+		initWithObjectsAndKeys:rpi, @"rpi", [NSDate date], @"date", nil];
+	[dict writeToFile:[self plistPath] atomically:YES];
+	[dict release];
+}
+
+
 #pragma mark web service interaction
 
 - (void)fetchRpi {
@@ -76,6 +93,10 @@
 	NSDictionary *dict = [receivedData objectFromJSONData];
 	NSString *rpi = [dict objectForKey:@"rpi"];
 
+	// save data
+	[self writeData:rpi];
+	
+	// hide activity indicator and display rpi value
 	[activityIndicator setHidden:YES];
 	[rpiLabel setText:rpi];
 	[receivedData release];

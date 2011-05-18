@@ -21,6 +21,9 @@
 @property (retain, nonatomic) UIActivityIndicatorView *activityIndicator;
 @property (retain, nonatomic) NSMutableData *receivedData;
 
+- (NSString *)plistPath;
+- (void)writeData: (NSString *)rpi;
+
 - (void)fetchRpi;
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response;
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
