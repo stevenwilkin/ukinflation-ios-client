@@ -11,10 +11,12 @@
 @implementation UKInflationViewController
 
 @synthesize rpiLabel;
+@synthesize activityIndicator;
 @synthesize receivedData;
 
 - (void)viewDidLoad {
 	[rpiLabel setText:@""];	// clear RPI label before shown
+	[activityIndicator setHidden:YES];
     [super viewDidLoad];
 	[self fetchRpi];
 }
@@ -35,6 +37,7 @@
 
 - (void)dealloc {
 	[rpiLabel release];
+	[activityIndicator release];
     [super dealloc];
 }
 
@@ -43,6 +46,9 @@
 #pragma mark web service interaction
 
 - (void)fetchRpi {
+	// show activity indicator
+	[activityIndicator setHidden:NO];
+	
 	receivedData = [[NSMutableData alloc] init];
 	
 	NSURL *url = [NSURL URLWithString:@"http://ukinflation.appspot.com/rpi.json"];
@@ -70,6 +76,7 @@
 	NSDictionary *dict = [receivedData objectFromJSONData];
 	NSString *rpi = [dict objectForKey:@"rpi"];
 
+	[activityIndicator setHidden:YES];
 	[rpiLabel setText:rpi];
 	[receivedData release];
 }
