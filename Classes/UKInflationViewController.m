@@ -63,11 +63,12 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    // receivedData contains the complete result
-	NSString *data = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
-	NSLog(@"%@", data);
+	// receivedData contains the complete result
+	NSDictionary *dict = [receivedData objectFromJSONData];
+	NSString *rpi = [dict objectForKey:@"rpi"];
+	NSLog(@"rpi: %@", rpi);
+	
 	[receivedData release];
-	[data release];
 }
 
 @end

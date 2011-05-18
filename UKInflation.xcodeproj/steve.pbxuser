@@ -1,10 +1,38 @@
 // !$*UTF8*$!
 {
+	1D3623240D0F684500981E51 /* UKInflationAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {937, 479}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 504}";
+		};
+	};
+	1D3623250D0F684500981E51 /* UKInflationAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {937, 502}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 639}";
+		};
+	};
 	1D6058900D05DD3D006BFB54 /* UKInflation */ = {
 		activeExec = 0;
 		executables = (
 			AAB909741382E36000597C6E /* UKInflation */,
 		);
+	};
+	28D7ACF60DDB3853001CB0EB /* UKInflationViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {937, 502}}";
+			sepNavSelRange = "{191, 0}";
+			sepNavVisRange = "{0, 705}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* UKInflationViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {937, 962}}";
+			sepNavSelRange = "{1064, 0}";
+			sepNavVisRange = "{655, 1039}";
+		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
@@ -42,6 +70,21 @@
 			};
 			PBXPerProjectTemplateStateSaveDate = 327350328;
 			PBXWorkspaceStateSaveDate = 327350328;
+		};
+		perUserProjectItems = {
+			AAB90A0D1383E22F00597C6E /* XCBuildMessageTextBookmark */ = AAB90A0D1383E22F00597C6E /* XCBuildMessageTextBookmark */;
+			AAB90A0E1383E22F00597C6E /* PBXTextBookmark */ = AAB90A0E1383E22F00597C6E /* PBXTextBookmark */;
+			AAB90A1A1383E23700597C6E /* PBXBookmark */ = AAB90A1A1383E23700597C6E /* PBXBookmark */;
+			AAB90A1B1383E23700597C6E /* PlistBookmark */ = AAB90A1B1383E23700597C6E /* PlistBookmark */;
+			AAB90A1C1383E23700597C6E /* PBXTextBookmark */ = AAB90A1C1383E23700597C6E /* PBXTextBookmark */;
+			AAB90A1D1383E23700597C6E /* PBXTextBookmark */ = AAB90A1D1383E23700597C6E /* PBXTextBookmark */;
+			AAB90A1E1383E23700597C6E /* PBXTextBookmark */ = AAB90A1E1383E23700597C6E /* PBXTextBookmark */;
+			AAB90A1F1383E23700597C6E /* PBXTextBookmark */ = AAB90A1F1383E23700597C6E /* PBXTextBookmark */;
+			AAB90A201383E23700597C6E /* PBXTextBookmark */ = AAB90A201383E23700597C6E /* PBXTextBookmark */;
+			AAB90A211383E23700597C6E /* PBXTextBookmark */ = AAB90A211383E23700597C6E /* PBXTextBookmark */;
+			AAB90A221383E44100597C6E /* PBXTextBookmark */ = AAB90A221383E44100597C6E /* PBXTextBookmark */;
+			AAB90A271383E44800597C6E /* PBXTextBookmark */ = AAB90A271383E44800597C6E /* PBXTextBookmark */;
+			AAB90A281383E47200597C6E /* PBXTextBookmark */ = AAB90A281383E47200597C6E /* PBXTextBookmark */;
 		};
 		sourceControlManager = AAB9097D1382E36900597C6E /* Source Control */;
 		userBuildSettings = {
@@ -88,5 +131,137 @@
 	AAB9097E1382E36900597C6E /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	AAB909F71383DF3500597C6E /* JSONKit.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1433, 3237}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{9048, 2576}";
+		};
+	};
+	AAB90A0D1383E22F00597C6E /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Implicit declaration of function 'fetchRpi'";
+		fRef = 28D7ACF70DDB3853001CB0EB /* UKInflationViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 16;
+		rType = 1;
+	};
+	AAB90A0E1383E22F00597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* UKInflationViewController.m */;
+		name = "UKInflationViewController.m: 17";
+		rLen = 0;
+		rLoc = 314;
+		rType = 0;
+		vrLen = 267;
+		vrLoc = 196;
+	};
+	AAB90A1A1383E23700597C6E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = AAB909A71382F86C00597C6E /* uk_inflation_bg.png */;
+	};
+	AAB90A1B1383E23700597C6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* UKInflation-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/steve/code/iphone/UKInflation/UKInflation-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	AAB90A1C1383E23700597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* UKInflationAppDelegate.m */;
+		name = "UKInflationAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 639;
+		vrLoc = 0;
+	};
+	AAB90A1D1383E23700597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* UKInflationAppDelegate.h */;
+		name = "UKInflationAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 504;
+		vrLoc = 0;
+	};
+	AAB90A1E1383E23700597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* UKInflationViewController.h */;
+		name = "UKInflationViewController.h: 10";
+		rLen = 0;
+		rLoc = 191;
+		rType = 0;
+		vrLen = 705;
+		vrLoc = 0;
+	};
+	AAB90A1F1383E23700597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAB909F71383DF3500597C6E /* JSONKit.h */;
+		name = "JSONKit.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2576;
+		vrLoc = 9048;
+	};
+	AAB90A201383E23700597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* UKInflationViewController.m */;
+		name = "UKInflationViewController.m: 52";
+		rLen = 0;
+		rLoc = 1065;
+		rType = 0;
+		vrLen = 1066;
+		vrLoc = 637;
+	};
+	AAB90A211383E23700597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* UKInflationViewController.m */;
+		name = "UKInflationViewController.m: 74";
+		rLen = 0;
+		rLoc = 1653;
+		rType = 0;
+		vrLen = 1144;
+		vrLoc = 733;
+	};
+	AAB90A221383E44100597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* UKInflationViewController.m */;
+		name = "UKInflationViewController.m: 17";
+		rLen = 0;
+		rLoc = 314;
+		rType = 0;
+		vrLen = 330;
+		vrLoc = 196;
+	};
+	AAB90A271383E44800597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* UKInflationViewController.m */;
+		name = "UKInflationViewController.m: 67";
+		rLen = 0;
+		rLoc = 1638;
+		rType = 0;
+		vrLen = 1038;
+		vrLoc = 655;
+	};
+	AAB90A281383E47200597C6E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* UKInflationViewController.m */;
+		name = "UKInflationViewController.m: 52";
+		rLen = 0;
+		rLoc = 1064;
+		rType = 0;
+		vrLen = 1039;
+		vrLoc = 655;
 	};
 }

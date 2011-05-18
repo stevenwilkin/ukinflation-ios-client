@@ -17,6 +17,7 @@
 		28D7ACF80DDB3853001CB0EB /* UKInflationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* UKInflationViewController.m */; };
 		AAB909A81382F86C00597C6E /* uk_inflation_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB909A71382F86C00597C6E /* uk_inflation_bg.png */; };
 		AAB909B21382FAC200597C6E /* uk_inflation.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB909B11382FAC200597C6E /* uk_inflation.png */; };
+		AAB909F91383DF3500597C6E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB909F81383DF3500597C6E /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		8D1107310486CEB800E47090 /* UKInflation-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UKInflation-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		AAB909A71382F86C00597C6E /* uk_inflation_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uk_inflation_bg.png; sourceTree = "<group>"; };
 		AAB909B11382FAC200597C6E /* uk_inflation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uk_inflation.png; sourceTree = "<group>"; };
+		AAB909F71383DF3500597C6E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		AAB909F81383DF3500597C6E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				AAB909F71383DF3500597C6E /* JSONKit.h */,
+				AAB909F81383DF3500597C6E /* JSONKit.m */,
 				32CA4F630368D1EE00C91783 /* UKInflation_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -172,6 +177,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* UKInflationAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* UKInflationViewController.m in Sources */,
+				AAB909F91383DF3500597C6E /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
