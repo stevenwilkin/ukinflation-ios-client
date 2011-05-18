@@ -11,10 +11,12 @@
 
 @interface UKInflationViewController : UIViewController {
 
+	IBOutlet UILabel *rpiLabel;
 	NSMutableData *receivedData;
 	
 }
 
+@property (retain, nonatomic) UILabel *rpiLabel;
 @property (retain, nonatomic) NSMutableData *receivedData;
 
 - (void)fetchRpi;

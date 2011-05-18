@@ -10,9 +10,11 @@
 
 @implementation UKInflationViewController
 
+@synthesize rpiLabel;
 @synthesize receivedData;
 
 - (void)viewDidLoad {
+	[rpiLabel setText:@""];	// clear RPI label before shown
     [super viewDidLoad];
 	[self fetchRpi];
 }
@@ -32,6 +34,7 @@
 
 
 - (void)dealloc {
+	[rpiLabel release];
     [super dealloc];
 }
 
@@ -66,8 +69,8 @@
 	// receivedData contains the complete result
 	NSDictionary *dict = [receivedData objectFromJSONData];
 	NSString *rpi = [dict objectForKey:@"rpi"];
-	NSLog(@"rpi: %@", rpi);
-	
+
+	[rpiLabel setText:rpi];
 	[receivedData release];
 }
 
