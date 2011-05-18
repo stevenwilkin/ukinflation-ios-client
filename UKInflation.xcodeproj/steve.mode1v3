@@ -327,7 +327,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AAB90A6F1384022400597C6E</string>
+										<string>AAB90AC01384688300597C6E</string>
 										<key>history</key>
 										<array>
 											<string>AAB90A1A1383E23700597C6E</string>
@@ -335,8 +335,8 @@
 											<string>AAB90A1C1383E23700597C6E</string>
 											<string>AAB90A1D1383E23700597C6E</string>
 											<string>AAB90A1F1383E23700597C6E</string>
-											<string>AAB90A621384012800597C6E</string>
-											<string>AAB90A631384012800597C6E</string>
+											<string>AAB90ABD1384685500597C6E</string>
+											<string>AAB90ABE1384685500597C6E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -348,14 +348,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {998, 534}}</string>
+								<string>{{0, 0}, {998, 565}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>534pt</string>
+							<string>565pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -368,14 +368,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 539}, {998, 139}}</string>
+								<string>{{0, 570}, {998, 108}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>139pt</string>
+							<string>108pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -632,7 +632,7 @@
 			<key>WindowToolGUID</key>
 			<string>AAB9097B1382E36900597C6E</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

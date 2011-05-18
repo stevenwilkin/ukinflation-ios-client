@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
 	[rpiLabel setText:@""];	// clear RPI label before shown
 	[activityIndicator setHidden:YES];
+	[self restoreData];
     [super viewDidLoad];
-	[self fetchRpi];
 }
 
 
@@ -42,6 +42,15 @@
 }
 
 
+#pragma mark view interaction
+
+// update the RPI label
+- (void)updateRpi:(NSString *)rpi {
+	[activityIndicator setHidden:YES];
+	[rpiLabel setText:rpi];
+}
+
+
 #pragma mark data persistance
 
 // path to the the plist containing the persisted data
@@ -57,6 +66,35 @@
 		initWithObjectsAndKeys:rpi, @"rpi", [NSDate date], @"date", nil];
 	[dict writeToFile:[self plistPath] atomically:YES];
 	[dict release];
+}
+
+// restore state from the plist
+- (void)restoreData {
+	
+	NSString *plistPath = [self plistPath];
+	
+	// use value from plist if it exists
+	if([[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+		NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+		
+		NSDate *date = [dict objectForKey:@"date"];
+		NSString *rpi = [dict objectForKey:@"rpi"];
+		
+		// set the displayed value
+		[self updateRpi:rpi];
+		
+		// if the value was retrieved more than an hour ago then refetch it
+		NSTimeInterval diff = [date timeIntervalSinceNow];
+		int hours = abs((int)(diff / (60 * 60)));
+		
+		if(hours >= 1) {
+			[self fetchRpi];
+		}
+
+	} else {	// call web service
+		[self fetchRpi];
+	}
+
 }
 
 
@@ -95,10 +133,9 @@
 
 	// save data
 	[self writeData:rpi];
-	
-	// hide activity indicator and display rpi value
-	[activityIndicator setHidden:YES];
-	[rpiLabel setText:rpi];
+	// update view
+	[self updateRpi:rpi];
+
 	[receivedData release];
 }
 
